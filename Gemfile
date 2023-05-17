@@ -33,7 +33,7 @@ group :development do
  
 
 end
-group :production
+group :production do
    gem "pg", "~> 1.0"
 end
 
