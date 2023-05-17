@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  house_id: 1
+  tenant_id: 1
+  date_requested: MyString
+  date_completed: MyString
+  description: MyString
+
+two:
+  house_id: 1
+  tenant_id: 1
+  date_requested: MyString
+  date_completed: MyString
+  description: MyString

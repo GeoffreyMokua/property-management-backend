@@ -10,20 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_17_172725) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema[7.0].define(version: 2023_05_17_231529) do
+  create_table "houses", force: :cascade do |t|
+    t.string "house_type"
+    t.string "status"
+    t.integer "no_of_bedrooms"
+    t.integer "rent"
+    t.string "description"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maintenances", force: :cascade do |t|
+    t.integer "house_id"
+    t.integer "tenant_id"
+    t.string "date_requested"
+    t.string "date_completed"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tenants", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.string "phone"
-    t.string "house_id"
+    t.string "phone_number"
+    t.integer "house_id"
     t.string "move_in_date"
     t.string "lease_term"
     t.integer "security_deposit"
     t.string "rent_status"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
