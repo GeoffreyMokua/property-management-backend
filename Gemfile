@@ -26,7 +26,11 @@ group :development, :test do
 end
 group :default do
   # Gems required for all environments
+  ruby "2.7.0"
    gem "pg", "~> 1.0"
+   gem "rails", "~> 7.0.4", ">= 7.0.4.3"
+    gem "rack-cors"
+    gem "puma", "~> 5.0"
 end
 
 group :development do
