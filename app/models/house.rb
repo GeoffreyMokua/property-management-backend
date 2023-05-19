@@ -1,4 +1,4 @@
 class House < ApplicationRecord
-    belongs_to :tenant
+    has_one :tenant
     has_many :maintenances
 end

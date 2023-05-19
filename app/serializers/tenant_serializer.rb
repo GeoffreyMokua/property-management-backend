@@ -1,4 +1,4 @@
 class TenantSerializer < ActiveModel::Serializer
-  attributes :id, 
-  has_many :houses
+  attributes :id
+  belongs_to :house
 end

@@ -1,4 +1,4 @@
 class Tenant < ApplicationRecord
     has_secure_password
-    has_many :houses
+    belongs_to :house
 end
