@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  house_id: 1
+  move_in_date: MyString
+  lease_term: MyString
+  security_deposit: 1
+  rent_status: MyString
+
+two:
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  house_id: 1
+  move_in_date: MyString
+  lease_term: MyString
+  security_deposit: 1
+  rent_status: MyString
